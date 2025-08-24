@@ -554,5 +554,10 @@ namespace White_Day_Mod_Tool
             bw.Write(totalEntries);
             bw.Write((byte)0x12);
         }
+
+        private void fontEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

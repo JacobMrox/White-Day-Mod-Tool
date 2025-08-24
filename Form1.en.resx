@@ -131,20 +131,20 @@
   <data name="wADToolStripMenuItem.Text" xml:space="preserve">
     <value>WAD</value>
   </data>
+  <data name="fontEditorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Font Editor</value>
+  </data>
+  <data name="mP3PlaylistEditorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Torres MP3 Playlist Editor</value>
+  </data>
   <data name="extrasToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="extrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
   </data>
   <data name="extrasToolStripMenuItem.Text" xml:space="preserve">
     <value>Extras</value>
   </data>
   <data name="helpToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>

@@ -35,6 +35,8 @@
             repackToolStripMenuItem = new ToolStripMenuItem();
             wADToolStripMenuItem = new ToolStripMenuItem();
             extrasToolStripMenuItem = new ToolStripMenuItem();
+            fontEditorToolStripMenuItem = new ToolStripMenuItem();
+            mP3PlaylistEditorToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -71,7 +73,19 @@
             // extrasToolStripMenuItem
             // 
             resources.ApplyResources(extrasToolStripMenuItem, "extrasToolStripMenuItem");
+            extrasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fontEditorToolStripMenuItem, mP3PlaylistEditorToolStripMenuItem });
             extrasToolStripMenuItem.Name = "extrasToolStripMenuItem";
+            // 
+            // fontEditorToolStripMenuItem
+            // 
+            resources.ApplyResources(fontEditorToolStripMenuItem, "fontEditorToolStripMenuItem");
+            fontEditorToolStripMenuItem.Name = "fontEditorToolStripMenuItem";
+            fontEditorToolStripMenuItem.Click += fontEditorToolStripMenuItem_Click;
+            // 
+            // mP3PlaylistEditorToolStripMenuItem
+            // 
+            resources.ApplyResources(mP3PlaylistEditorToolStripMenuItem, "mP3PlaylistEditorToolStripMenuItem");
+            mP3PlaylistEditorToolStripMenuItem.Name = "mP3PlaylistEditorToolStripMenuItem";
             // 
             // helpToolStripMenuItem
             // 
@@ -104,5 +118,7 @@
         private ToolStripMenuItem wADToolStripMenuItem;
         private ToolStripMenuItem extrasToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem fontEditorToolStripMenuItem;
+        private ToolStripMenuItem mP3PlaylistEditorToolStripMenuItem;
     }
 }
