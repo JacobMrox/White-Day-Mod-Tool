@@ -554,47 +554,5 @@ namespace White_Day_Mod_Tool
             bw.Write(totalEntries);
             bw.Write((byte)0x12);
         }
-
-        // Remove the extra closing brace at the end of the file
-
-        // Original code (incorrect):
-        //     }
-        //         private class NopEntry
-        //         {
-        //             public string Name;
-        //             public byte Type;
-        //             public int FileOffset;
-        //             public int EncodeSize;
-        //             public int DecodeSize;
-        //             private void radioButton1_CheckedChanged(object sender, EventArgs e);
-        //             private void radioButton2_CheckedChanged(object sender, EventArgs e);
-        //             private void radioButton3_CheckedChanged(object sender, EventArgs e);
-        //         }
-        //
-        /*
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-                selectedCompression = NopCompression.None;
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked)
-                selectedCompression = NopCompression.Lz77;
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton3.Checked)
-                selectedCompression = NopCompression.Sonnori;
-        }*/
-
-        //     }
-        // }
-
-        // Fixed code:
-        // Remove the duplicate/erroneous closing brace here:
-        // }
     }
 }

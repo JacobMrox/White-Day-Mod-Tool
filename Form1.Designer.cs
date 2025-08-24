@@ -34,13 +34,15 @@
             unpackToolStripMenuItem = new ToolStripMenuItem();
             repackToolStripMenuItem = new ToolStripMenuItem();
             wADToolStripMenuItem = new ToolStripMenuItem();
+            extrasToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             resources.ApplyResources(menuStrip1, "menuStrip1");
-            menuStrip1.Items.AddRange(new ToolStripItem[] { nOPToolStripMenuItem, wADToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { nOPToolStripMenuItem, wADToolStripMenuItem, extrasToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Name = "menuStrip1";
             // 
             // nOPToolStripMenuItem
@@ -66,6 +68,16 @@
             resources.ApplyResources(wADToolStripMenuItem, "wADToolStripMenuItem");
             wADToolStripMenuItem.Name = "wADToolStripMenuItem";
             // 
+            // extrasToolStripMenuItem
+            // 
+            resources.ApplyResources(extrasToolStripMenuItem, "extrasToolStripMenuItem");
+            extrasToolStripMenuItem.Name = "extrasToolStripMenuItem";
+            // 
+            // helpToolStripMenuItem
+            // 
+            resources.ApplyResources(helpToolStripMenuItem, "helpToolStripMenuItem");
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -90,5 +102,7 @@
         private ToolStripMenuItem unpackToolStripMenuItem;
         private ToolStripMenuItem repackToolStripMenuItem;
         private ToolStripMenuItem wADToolStripMenuItem;
+        private ToolStripMenuItem extrasToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
     }
 }
