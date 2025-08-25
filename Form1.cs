@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing.Design;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+//using White_Day_Mod_Tool.FontEditor;
 
 namespace White_Day_Mod_Tool
 {
@@ -557,7 +559,11 @@ namespace White_Day_Mod_Tool
 
         private void fontEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            // Open Font Editor form
+            using (var fontEditor = new FontEditor())
+            {
+                fontEditor.ShowDialog();
+            }
         }
     }
 }
