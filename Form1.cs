@@ -565,5 +565,10 @@ namespace White_Day_Mod_Tool
                 fontEditor.ShowDialog();
             }
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

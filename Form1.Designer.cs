@@ -37,14 +37,17 @@
             extrasToolStripMenuItem = new ToolStripMenuItem();
             fontEditorToolStripMenuItem = new ToolStripMenuItem();
             mP3PlaylistEditorToolStripMenuItem = new ToolStripMenuItem();
+            saveEditorToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             resources.ApplyResources(menuStrip1, "menuStrip1");
-            menuStrip1.Items.AddRange(new ToolStripItem[] { nOPToolStripMenuItem, wADToolStripMenuItem, extrasToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, nOPToolStripMenuItem, wADToolStripMenuItem, extrasToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Name = "menuStrip1";
             // 
             // nOPToolStripMenuItem
@@ -73,7 +76,7 @@
             // extrasToolStripMenuItem
             // 
             resources.ApplyResources(extrasToolStripMenuItem, "extrasToolStripMenuItem");
-            extrasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fontEditorToolStripMenuItem, mP3PlaylistEditorToolStripMenuItem });
+            extrasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fontEditorToolStripMenuItem, mP3PlaylistEditorToolStripMenuItem, saveEditorToolStripMenuItem });
             extrasToolStripMenuItem.Name = "extrasToolStripMenuItem";
             // 
             // fontEditorToolStripMenuItem
@@ -87,10 +90,27 @@
             resources.ApplyResources(mP3PlaylistEditorToolStripMenuItem, "mP3PlaylistEditorToolStripMenuItem");
             mP3PlaylistEditorToolStripMenuItem.Name = "mP3PlaylistEditorToolStripMenuItem";
             // 
+            // saveEditorToolStripMenuItem
+            // 
+            resources.ApplyResources(saveEditorToolStripMenuItem, "saveEditorToolStripMenuItem");
+            saveEditorToolStripMenuItem.Name = "saveEditorToolStripMenuItem";
+            // 
             // helpToolStripMenuItem
             // 
             resources.ApplyResources(helpToolStripMenuItem, "helpToolStripMenuItem");
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            // 
+            // fileToolStripMenuItem
+            // 
+            resources.ApplyResources(fileToolStripMenuItem, "fileToolStripMenuItem");
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { exitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            // 
+            // exitToolStripMenuItem
+            // 
+            resources.ApplyResources(exitToolStripMenuItem, "exitToolStripMenuItem");
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -120,5 +140,8 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem fontEditorToolStripMenuItem;
         private ToolStripMenuItem mP3PlaylistEditorToolStripMenuItem;
+        private ToolStripMenuItem saveEditorToolStripMenuItem;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
     }
 }
